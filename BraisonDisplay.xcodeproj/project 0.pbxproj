@@ -10,6 +10,9 @@
 		5D5C215D19C99B3C007F003D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C215C19C99B3C007F003D /* main.cpp */; };
 		5D5C215F19C99B3C007F003D /* LocalLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C215E19C99B3C007F003D /* LocalLibrary.cpp */; };
 		5D5C216219C99B3C007F003D /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C216119C99B3C007F003D /* Makefile */; };
+		5D5C21C719C99B96007F003D /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C21C319C99B96007F003D /* Time.cpp */; };
+		5D5C21C819C99B96007F003D /* TimeBraille.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C21C519C99B96007F003D /* TimeBraille.cpp */; };
+		5D5C21CE19C99BE6007F003D /* BrailleCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C21CD19C99BE6007F003D /* BrailleCell.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +94,13 @@
 		5D5C21AE19C99B3C007F003D /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TemplateIcon.icns; path = Utilities/TemplateIcon.icns; sourceTree = "<group>"; };
 		5D5C21AF19C99B3C007F003D /* clupload_osx.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = clupload_osx.sh; path = Utilities/clupload_osx.sh; sourceTree = "<group>"; };
 		5D5C21B019C99B3C007F003D /* BraisonDisplay.ino */ = {isa = PBXFileReference; lastKnownFileType = text; path = BraisonDisplay.ino; sourceTree = "<group>"; };
+		5D5C21C319C99B96007F003D /* Time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; };
+		5D5C21C419C99B96007F003D /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
+		5D5C21C519C99B96007F003D /* TimeBraille.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeBraille.cpp; sourceTree = "<group>"; };
+		5D5C21C619C99B96007F003D /* TimeBraille.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeBraille.h; sourceTree = "<group>"; };
+		5D5C21C919C99BA8007F003D /* NumberBraille.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberBraille.h; sourceTree = "<group>"; };
+		5D5C21CC19C99BE6007F003D /* BrailleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrailleCell.h; sourceTree = "<group>"; };
+		5D5C21CD19C99BE6007F003D /* BrailleCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BrailleCell.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -113,6 +123,9 @@
 		5D5C215B19C99B3C007F003D /* BraisonDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				5D5C21CB19C99BD8007F003D /* BrailleCell */,
+				5D5C21CA19C99BAB007F003D /* Number */,
+				5D5C21C219C99B82007F003D /* TimeBraille */,
 				5D5C215C19C99B3C007F003D /* main.cpp */,
 				5D5C215E19C99B3C007F003D /* LocalLibrary.cpp */,
 				5D5C216019C99B3C007F003D /* LocalLibrary.h */,
@@ -234,6 +247,34 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		5D5C21C219C99B82007F003D /* TimeBraille */ = {
+			isa = PBXGroup;
+			children = (
+				5D5C21C319C99B96007F003D /* Time.cpp */,
+				5D5C21C419C99B96007F003D /* Time.h */,
+				5D5C21C519C99B96007F003D /* TimeBraille.cpp */,
+				5D5C21C619C99B96007F003D /* TimeBraille.h */,
+			);
+			name = TimeBraille;
+			sourceTree = "<group>";
+		};
+		5D5C21CA19C99BAB007F003D /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				5D5C21C919C99BA8007F003D /* NumberBraille.h */,
+			);
+			name = Number;
+			sourceTree = "<group>";
+		};
+		5D5C21CB19C99BD8007F003D /* BrailleCell */ = {
+			isa = PBXGroup;
+			children = (
+				5D5C21CC19C99BE6007F003D /* BrailleCell.h */,
+				5D5C21CD19C99BE6007F003D /* BrailleCell.cpp */,
+			);
+			name = BrailleCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
@@ -342,7 +383,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5C21C719C99B96007F003D /* Time.cpp in Sources */,
+				5D5C21C819C99B96007F003D /* TimeBraille.cpp in Sources */,
 				5D5C216219C99B3C007F003D /* Makefile in Sources */,
+				5D5C21CE19C99BE6007F003D /* BrailleCell.cpp in Sources */,
 				5D5C215D19C99B3C007F003D /* main.cpp in Sources */,
 				5D5C215F19C99B3C007F003D /* LocalLibrary.cpp in Sources */,
 			);
